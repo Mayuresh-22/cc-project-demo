@@ -7,6 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
+    allowedHosts: ["planty.mayuresh.me"],
     port: 8080,
     proxy: {
       "/api": {
