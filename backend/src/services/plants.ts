@@ -7,8 +7,9 @@ const pool = new Pool({
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   port: parseInt(process.env.DB_PORT || "5432"),
-  ssl: { rejectUnauthorized: false },
+  ssl: { rejectUnauthorized: false }
 });
+
 
 class PlantService {
   async getUserPlants(user_id: string) {

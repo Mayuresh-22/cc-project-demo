@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
-    allowedHosts: ["greenguardian.mayuresh.me"],
+    allowedHosts: ["cc-project-lb-199792384.us-west-2.elb.amazonaws.com", "greenguardian.mayuresh.me"],
     port: 8080,
     proxy: {
       "/api": {
